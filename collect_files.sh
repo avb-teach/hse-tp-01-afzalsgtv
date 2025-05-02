@@ -1,7 +1,4 @@
 #!/bin/bash
-# Это интерпретатор: говорит, что скрипт нужно запускать с помощью bash
-
-# Берём первый и второй аргумент — входная и выходная директории
 INPUT_DIR="$1"
 OUTPUT_DIR="$2"
 
@@ -33,5 +30,8 @@ find "$INPUT_DIR" -type f | while read -r FILE_PATH; do
 
   echo "Скопирован: $FILE_PATH -> $DEST_PATH"
 done
+# Очень много времени убил на исправление кода с Java, к сожалению так и не сработал, поэтому вот баш
 # Скрипт только запускает компилацию основного алгоритмa который реализован на java
-# Команды и их функции я нашел на https://metanit.com/os/linux/12.8.php
+# Команды и их функции я нашел на https://metanit.com/os/linux/12.8.php, https://habr.com/ru/companies/ruvds/articles/325928/, 
+#https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html
+
