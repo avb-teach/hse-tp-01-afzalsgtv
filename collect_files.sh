@@ -1,9 +1,6 @@
 #!/bin/bash
 
-if [[ -z "$1" || -z "$2" ]]; then
-    echo "Usage: ./collect_files.sh /input/dir /output/dir"
-    exit 1
-fi
+
 
 
 java FileCollector "$1" "$2"
